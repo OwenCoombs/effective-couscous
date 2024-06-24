@@ -15,6 +15,8 @@ import App from './App'
 import ErrorPage from './ErrorPage'
 import Header from './Header'
 import Footer from './Footer'
+import Projects from './projects'
+import Contact from './contact'
 
 
 function Layout() {

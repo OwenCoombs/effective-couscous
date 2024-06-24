@@ -1,4 +1,4 @@
-import NavBar from "./navbar";
+
 import Button from 'react-bootstrap/Button';
 import mindreader from './assets/mindreader.png';
 import Card from 'react-bootstrap/Card';
@@ -15,10 +15,11 @@ import social from './assets/Socialreact.png'
 
 
 
+
 function Projects() {
     return (
         <div className="text-center">
-            <NavBar />
+
             <div className="text-center">
                 <h1 id="projectsH1">Projects</h1>
             </div>

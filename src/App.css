@@ -1,19 +1,16 @@
-html {
+/* Ensure the full height of the viewport is used */
+html, body, #root {
   height: 100%;
-}
-
-body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #e7dfc6;
 }
 
-#root {
-  height: 100%;
-}
-
-#blogcontainer {
-  width: fit-content;
-  height: fit-content;
+/* Apply font styles */
+h1, h4, p, h2, h6, h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .salsa-regular {
@@ -22,34 +19,18 @@ body {
   font-style: normal;
 }
 
-h1,
-h4,
-p,
-h2,
-h6,
-h5 {
-
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+/* Style for about picture */
 #aboutpic {
-  width: 950px;
+  width: 100%;
+  max-width: 950px;
 }
 
-/* 
-#navcolor{
-  background-color: #e9f1f7;
-} */
-
-
+/* Projects link styles */
 #projects {
   font-size: 175px;
   float: right;
   padding-left: 750px;
   color: black;
-
 }
 
 .bebas-neue-regular {
@@ -64,7 +45,6 @@ h5 {
   margin: 0 -.25rem;
   padding: 0 .25rem;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-
 }
 
 #projects:hover {
@@ -78,7 +58,6 @@ h5 {
 
 #h6font {
   font-size: 50px;
-
 }
 
 #Blogs {
@@ -96,8 +75,6 @@ h5 {
   width: 65px;
   height: 65px;
   margin-bottom: 25px;
-
-
 }
 
 #projectsH1 {
@@ -116,10 +93,125 @@ h5 {
 #imagesP {
   width: 250px;
   height: 400px;
-  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+  object-fit: cover;
   padding: 10px;
-  border: 1px solid black; /* Add border if needed */
-  border-radius: 15px; /* Adjust the value for desired roundness */
+  border: 1px solid black;
+  border-radius: 15px;
   opacity: 0.6;
   transition: 0.3s;
+}
+
+/* General styles for the header */
+.header {
+  width: 100%;
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Menu icon for opening/closing the menu */
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 55%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align links to the top */
+  padding-top: 20px; /* Add some top padding */
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+/* Active state for navigation menu */
+.nav-menu.active {
+  left: 0;
+}
+
+/* Navigation link styles */
+.nav-link {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+  color: #ff6347;
+}
+
+/* Close icon styles */
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 768px) {
+  .nav-menu {
+    position: static;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: none;
+    z-index: 0;
+  }
+
+  .nav-link {
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+
+  .close-icon,
+  .menu-icon {
+    display: none;
+  }
+
+  /* Show full-stack section on desktop */
+  .full-stack-section {
+    display: block !important;
+  }
+}
+
+/* Hide full-stack section on mobile */
+@media (max-width: 767px) {
+  .full-stack-section {
+    display: none !important;
+  }
+
+  /* Adjust text size and spacing on homepage for mobile */
+  h1, h2, h4, h5, h6, p {
+    font-size: 1px; /* Adjusted font size for mobile */
+    margin-bottom: 10px;
+  }
+}
+
+/* Adjust text size and spacing on homepage for larger screens */
+@media (min-width: 768px) {
+  h1, h2, h4, h5, h6, p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+}
+
+/* Adjust Projects text size on projects page */
+.projects-page #projects {
+  font-size: 3rem;
 }
