@@ -170,7 +170,7 @@ h1, h4, p, h2, h6, h5 {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background: none;
     z-index: 0;
   }
@@ -207,11 +207,11 @@ h1, h4, p, h2, h6, h5 {
 
 /* Adjust text size and spacing on homepage for larger screens */
 @media (min-width: 768px) {
-  h1, h2, h4, h5, h6, p {
-    font-size: 1.5rem;
+ #projects {
+    font-size: 125px;
     margin-bottom: 15px;
     margin-top: 15px;
-    padding: 50px;
+    padding: 25px;
   }
 }
 
