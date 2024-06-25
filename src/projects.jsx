@@ -26,34 +26,34 @@ function Projects() {
             <div className="container p-3">
                 <div className="row align-items-start">
                     <div className="col">
-                        <Link to={'https://github.com/OwenCoombs'}>
+                        <Link to={'https://owencoombs.github.io/mind-reader/'}>
                             <img src={mindreader} className="rounded" id="imagesP"></img>
                         </Link>
                     </div>
                     <div className="col">
-                        <Link to={'https://github.com/OwenCoombs'}>
+                        <Link to={'https://owencoombs.github.io/weather-app/'}>
                             <img src={weatherapp} className="rounded" id="imagesP"></img>
                         </Link>
                     </div>
                     <div className="col">
-                        <Link to={'https://github.com/OwenCoombs'}>
+                        <Link to={'https://owencoombs.github.io/tic-tac-toe/'}>
                             <img src={tictactoe} className="rounded" id="imagesP"></img>
                         </Link>
                     </div>
                 </div>
                 <div className="row align-items-center">
                     <div className="col">
-                        <Link to={'https://github.com/OwenCoombs'}>
+                        <Link to={'https://owencoombs.github.io/-random-restaurant/'}>
                             <img src={restmenu} className="rounded" id="imagesP"></img>
                         </Link>
                     </div>
                     <div className="col">
-                        <Link to={'https://github.com/OwenCoombs'}>
+                        <Link to={'https://owen-todo-list.vercel.app/'}>
                             <img src={todo} className="rounded" id="imagesP"></img>
                         </Link>
                     </div>
                     <div className="col">
-                        <Link to={'https://github.com/OwenCoombs'}>
+                        <Link to={'https://media-app-five.vercel.app/'}>
                             <img src={social} className="rounded" id="imagesP"></img>
                         </Link>
                     </div>
