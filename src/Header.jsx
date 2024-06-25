@@ -19,7 +19,7 @@ function Header() {
           <FaTimes />
         </div>
         <Link className="nav-link" to='/' onClick={toggleMenu}>Home</Link>
-        <Link className="nav-link" to='/projects' onClick={toggleMenu}>projects</Link>
+        <Link className="nav-link" to='/projects' onClick={toggleMenu}>Projects</Link>
         <Link className="nav-link" to='/contact' onClick={toggleMenu}>Contact</Link>
       </nav>
     </div>
